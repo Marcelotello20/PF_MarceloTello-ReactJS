@@ -13,7 +13,7 @@ function App() {
       <Navbar/>
       <ItemListContainer props="Bienvenido"/>
       <ItemCount initial={1} stock={10} onAdd={(quantity) => console.log('Cantidad agregada ', quantity)} />
-      {/* <ItemDetailContainer/> */}
+      <ItemDetailContainer/>
     </div>
   );
 }
