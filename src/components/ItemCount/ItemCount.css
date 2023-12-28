@@ -1,0 +1,35 @@
+.Counter {
+    display: grid; 
+    width: 100%;
+    justify-content: center;
+}
+
+.Controls {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.Controls .Number {
+    color: white;
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(226, 202, 43);
+    border: 0;
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    transition: background-color 1s, color 1s;
+}
+
+button:hover {
+    color: white;
+    background-color: rgb(153, 43, 226);
+}

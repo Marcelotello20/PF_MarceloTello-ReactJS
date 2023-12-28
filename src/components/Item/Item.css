@@ -1,0 +1,30 @@
+.CardItem {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 330px;
+
+    background-color: black;
+    border-radius: 25px;
+    margin: 20px;
+    
+    color: white;
+}
+
+.CardItem .Header {
+    text-align: center;
+    text-decoration: bold;
+    width: 80%;
+}
+
+.CardItem .ItemImg {
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.CardItem .Info {
+    text-align: center;
+    font-size: 20px;
+}

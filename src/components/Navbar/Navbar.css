@@ -1,0 +1,44 @@
+.Navbar{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    margin: 0;
+    
+  }
+  
+  .NavbarLista {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .NavbarLista li {
+    padding: 20px;
+    border-radius: 30px;
+    margin: 10px;
+    color: white;
+    font-size: 20px;
+  }
+
+  .NavbarLista a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s;
+  }
+
+  .NavbarLista a:hover {
+    color: rgb(255, 187, 0);
+  }
+  
+  .Navbar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 20px;
+  }
