@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import { getProducts } from "../../asyncMock";
+import { getProducts, getProductByCategory } from "../../asyncMock";
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
 
@@ -12,7 +12,7 @@ const ItemListContainer = ({props}) => {
   const { categoryId } = useParams()
 
   useEffect(() => {
-      const asyncFunc = categoryId ? getProductsByCategory : getProducts
+      const asyncFunc = categoryId ? getProductByCategory : getProducts
 
       asyncFunc(categoryId)
         .then(response => {
@@ -26,7 +26,7 @@ const ItemListContainer = ({props}) => {
   return (
     <>
       <div className="Titulo">
-        <h1>{props}</h1>
+        <h1>Bienvenido</h1>
       </div>
       <div className="Productos">
         <ItemList products={products} />

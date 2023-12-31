@@ -16,14 +16,14 @@
   font-size: 20px;
 }
   
-  .NavbarLista {
+  .Categories {
     display: flex;
     flex-direction: row;
     justify-content: center;
     list-style: none;
   }
   
-  .NavbarLista a {
+  .Categories a {
     padding: 20px;
     border-radius: 30px;
     margin: 10px;
@@ -31,13 +31,13 @@
     font-size: 20px;
   }
 
-  .NavbarLista a {
+  .Categories a {
     text-decoration: none;
     color: white;
     transition: color 1s;
   }
 
-  .NavbarLista a:hover {
+  .Categories a:hover {
     color: rgb(255, 187, 0);
   }
   
