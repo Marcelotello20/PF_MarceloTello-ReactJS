@@ -19,6 +19,7 @@
   .Categories {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     list-style: none;
   }
@@ -48,4 +49,10 @@
     align-items: center;
     list-style: none;
     padding: 20px;
+  }
+
+  @media(max-width:1000px) {
+    .Categories {
+      padding: 0;
+    }  
   }

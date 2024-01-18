@@ -13,7 +13,9 @@ function App() {
   return (
     <div className='App'>
       <BrowserRouter>
+  
         <Navbar />
+
         <Routes>
           <Route path='/' element= { <ItemListContainer/> } />
           <Route path='/category/:categoryId' element= { <ItemListContainer /> } />
