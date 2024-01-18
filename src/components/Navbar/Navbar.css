@@ -8,6 +8,14 @@
     margin: 0;   
 }
 
+
+.logoNavBar {
+  width: 80px;
+  padding: 20px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
 .Navbar h3 {
   padding: 20px;
   border-radius: 30px;

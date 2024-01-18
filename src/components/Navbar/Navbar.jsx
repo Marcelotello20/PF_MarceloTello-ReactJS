@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
     <nav className="Navbar">
       <Link to='/'>
-        <h3>Ecommerce</h3>
+        <img src="../../public/images/GLM.png" alt="logo ghetto life" className="logoNavBar" />
       </Link> 
       <ul className="Categories">
         <NavLink to={`/category/Produccion`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Produccion</NavLink>
