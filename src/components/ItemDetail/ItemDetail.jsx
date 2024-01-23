@@ -12,6 +12,14 @@ const ItemDetail = ({ id, name, img, category, description, price,stock}) => {
     //Funcion para agregar la cantidad con el botton terminar compra
     const handleOnAdd = (quantity) => {
         setQuiantityAdded(quantity)
+        
+        //Armar el objeto con los datos minimos necesarios
+        const item = {
+            id, name, price
+        }
+        
+        //Funcion para tener el objeto y la cantidad seleccionada por el usuario
+        addItem(item, quantity)
     }
     
     return (

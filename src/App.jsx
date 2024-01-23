@@ -8,22 +8,28 @@ import Header from './components/Header/Header'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer'
 
+import { CartProvider } from './context/CartContext';
+
 
 
 const App = () => {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <BrowserRouter> 
+
+        <CartProvider>
   
-        <Navbar />
-        <Header />
-        
-        <Routes>
-          <Route path='/' element= {<ItemListContainer/>}/>
-          <Route path='/category/:categoryId' element= {<ItemListContainer/>}/>
-          <Route path='/item/:itemId' element= {<ItemDetailContainer/>}/>
-          <Route path='*' element= {<h1>404 NOT FOUND</h1>}/>
-        </Routes>
+          <Navbar />
+          <Header />
+          
+          <Routes>
+            <Route path='/' element= {<ItemListContainer/>}/>
+            <Route path='/category/:categoryId' element= {<ItemListContainer/>}/>
+            <Route path='/item/:itemId' element= {<ItemDetailContainer/>}/>
+            <Route path='*' element= {<h1>404 NOT FOUND</h1>}/>
+          </Routes>
+
+        </CartProvider>
 
       </BrowserRouter>  
     </div>
