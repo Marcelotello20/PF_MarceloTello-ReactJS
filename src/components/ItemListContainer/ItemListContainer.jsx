@@ -2,6 +2,7 @@ import { useState,useEffect } from "react";
 import { getProducts, getProductByCategory } from "../../asyncMock";
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
+// import Header from "../Header/Header";
 
 import { useParams } from 'react-router-dom' 
 
@@ -25,7 +26,7 @@ const ItemListContainer = () => {
 
   return (
     <>
-  
+      {/* <Header></Header> */}
       <div className="Productos">
         <ItemList products={products} />
       </div>
@@ -33,4 +34,4 @@ const ItemListContainer = () => {
   )
 }
 
-export default ItemListContainer;
+export default ItemListContainer

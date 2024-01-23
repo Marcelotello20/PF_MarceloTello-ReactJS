@@ -11,14 +11,14 @@ const Navbar = () => {
         <img src="../../public/images/GLM.png" alt="logo ghetto life" className="logoNavBar" />
       </Link> 
       <ul className="Categories">
-        <NavLink to={`/category/produccion`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Produccion</NavLink>
-        <NavLink to={`/category/beats`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Beats</NavLink>
-        <NavLink to={`/category/grabacion`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Grabacion</NavLink>
-        <NavLink to={`/category/sonido`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Sonido</NavLink>
+        <NavLink to={`/category/Producción`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Produccion</NavLink>
+        <NavLink to={`/category/Beats`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Beats</NavLink>
+        <NavLink to={`/category/Grabación`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Grabacion</NavLink>
+        <NavLink to={`/category/Sonido`} className={({ isActive}) => isActive ? 'ActiveOption' : 'Option'}>Sonido</NavLink>
       </ul>
       <CartWidget className="Carrito"/>
     </nav> 
     )
 }
 
-export default Navbar;
+export default Navbar
