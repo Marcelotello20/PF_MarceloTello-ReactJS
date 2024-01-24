@@ -1,7 +1,9 @@
-/* .Carrito {
+.Carrito {
+    width: 200px;
     padding: 0px 10px 0;
     background-color: blueviolet;
     border-radius: 30px;
     margin: 10px;
     color: white;
-} */
+}
+
