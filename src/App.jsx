@@ -11,7 +11,7 @@ import Cart from './components/Cart/Cart'
 
 //Contexto del carro de compras
 import { CartProvider } from './context/CartContext'
-
+import { getFirestore } from 'firebase/firestore'
 
 
 const App = () => {

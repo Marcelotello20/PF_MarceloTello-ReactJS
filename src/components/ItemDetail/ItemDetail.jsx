@@ -46,7 +46,7 @@ const ItemDetail = ({ id, name, img, category, description, price,stock}) => {
                 <p className="Info">
                     Precio: ${price}
                 </p>
-                
+
             </section>
             <footer className="ItemFooter">
                 {
