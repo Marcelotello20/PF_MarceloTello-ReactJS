@@ -1,12 +1,12 @@
 import './ItemDetail.css'
 import React, { useContext } from 'react'
 import ItemCount from "../ItemCount/ItemCount"
-// import '../ItemCount/ItemCount.css'
+
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 
-const ItemDetail = ({ id, name, img, category, description, price,stock}) => {
+const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
     //Crear estado donde se va almacenar la cantidad deseada del producto
     const [quantityAdded, setQuantityAdded] = useState(0)
     
@@ -38,7 +38,7 @@ const ItemDetail = ({ id, name, img, category, description, price,stock}) => {
             </picture>
             <section>
                 <p className="Info">
-                    Categoria: {category}
+                    Categoria: {categoryId}
                 </p>
                 <p className="Info">
                     Descripción: {description}

@@ -11,7 +11,6 @@ import Cart from './components/Cart/Cart'
 
 //Contexto del carro de compras
 import { CartProvider } from './context/CartContext'
-import { getFirestore } from 'firebase/firestore'
 
 
 const App = () => {
@@ -23,7 +22,7 @@ const App = () => {
           <Navbar />
           
           <Routes>
-            <Route path='/' element= {<ItemListContainer />}/>
+            <Route path='/' element= {<ItemListContainer /> }/>
             <Route path='/category/:categoryId' element= {<ItemListContainer />}/>
             <Route path='/item/:itemId' element= {<ItemDetailContainer />}/>
             <Route path='/cart' element={<Cart />}/>
