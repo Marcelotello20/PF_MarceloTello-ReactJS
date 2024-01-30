@@ -1,3 +1,4 @@
+
 .Navbar{
     display:flex;
     width: 100%;
@@ -38,12 +39,16 @@
     margin: 10px;
     color: white;
     font-size: 20px;
-  }
 
-  .Categories a {
     text-decoration: none;
     color: white;
     transition: color 1s;
+  }
+
+  .Option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .Categories a:hover {
@@ -64,3 +69,6 @@
       padding: 0;
     }  
   }
+
+
+

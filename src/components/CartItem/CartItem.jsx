@@ -1,13 +1,14 @@
 
-import { CartContext } from "../../context/CartContext";
-
-const CartItem = () => {
-    //Hook de useContext para darle contexto al carrito y su array vacio[]
-    const { cart, totalQuantity, total} = useContext(CartContext)
+const CartItem = ({id, name, price, quantity}) => {
 
     return (
-        <div>
-            
+        <div className="CarritoItems">
+            <div className='item-details'>
+                <p className='item'>{name}</p>
+                <p className='item'>Precio: ${price}</p>
+                <p className='item'>Cantidad: {quantity}</p>
+            </div>
+            {/* <button onClick={} */}
         </div>
     )
 }

@@ -9,7 +9,7 @@ export const CartContext = createContext({
 //osea es una caja de herramientas tipo carrito
 export const CartProvider = ({ children }) => {
     
-    //Crear estado para almacenar los datos
+    //Crear estado para almacenar los datos del carrito
     const [cart, setCart] = useState ([])
 
     //Comprobación
