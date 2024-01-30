@@ -44,7 +44,7 @@ export const CartProvider = ({ children }) => {
     
     //Retornamos toda las funciones como props mediante value
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart}}>
             { children }
         </CartContext.Provider>
     )

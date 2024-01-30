@@ -9,9 +9,6 @@ const Item = ({id, name, img,price, stock, categoryId}) => {
                 <h2 className="ItemHeader">
                     {name}
                 </h2>
-                <p className="Info InfoCategoria">
-                    Categoria: {categoryId}
-                </p>
             </header>
             <picture>
                 <img src={img} alt={name} className='ItemImg' />
