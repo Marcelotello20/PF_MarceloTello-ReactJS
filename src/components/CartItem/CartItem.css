@@ -1,0 +1,24 @@
+.CarritoItems {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+}
+.CarritoItem {
+    display: flex;
+    width: 100%;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+.CarritoInfo {
+    width: 33%;
+    color: white;
+    margin: 0px 0px 0px 20px
+}
+
+.CarroInfo2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+

@@ -8,7 +8,14 @@
     background-color: black;
     margin: 0;   
 }
-
+.Navbar div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 20px;
+}
 
 .logoNavBar {
   width: 80px;
@@ -16,7 +23,6 @@
   border-radius: 30px;
   margin: 10px;
 }
-
 .Navbar h3 {
   padding: 20px;
   border-radius: 30px;
@@ -24,14 +30,13 @@
   color: white;
   font-size: 20px;
 }
-  
-  .Categories {
+.Categories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
-  }
+}
   
   .Categories a {
     padding: 20px;
@@ -45,30 +50,40 @@
     transition: color 1s;
   }
 
-  .Option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .Categories a:hover {
     color: rgb(255, 187, 0);
   }
   
-  .Navbar div {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 20px;
-  }
-
+ 
   @media(max-width:1000px) {
     .Categories {
       padding: 0;
     }  
   }
+
+
+
+.Option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: background-color 1s, color 1s;
+}
+
+.ActiveOption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  .ActiveOption:active {
+    
+    background-color: #550062;
+    color: rgb(255, 187, 0);
+  }
+
+  
 
 
 

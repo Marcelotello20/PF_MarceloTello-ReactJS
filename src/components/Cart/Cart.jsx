@@ -22,10 +22,22 @@ const Cart = () => {
     //Total del carrito con dos botones de reinicio y para el siguiente paso
     return (
         <div className='cartPage'>
-            { cart.map (p => <CartItem key={p.id} {...p}/> )}
-            <h3>Total: ${total} </h3>
-            <button onClick={() => clearCart()} className='Button'>Limpiar Carrito</button>
-            <Link to='/checkout' className='Option'>Checkout</Link>
+
+            <div className='Cart'>
+
+                { cart.map (p => <CartItem key={p.id} {...p}/> )}
+
+                <div className='CarroInfo2'>
+                   <button onClick={() => clearCart()} className='Button'>Limpiar Carrito</button>
+                   <h3>Total: ${total} </h3>
+                </div>
+
+                <div className='CarroCheckout'>
+                    <Link to='/checkout' className='Option'>Checkout</Link>
+                </div>
+
+            </div>
+
         </div>
     )
 }

@@ -18,6 +18,7 @@ export const CartProvider = ({ children }) => {
     const addItem = (item, quantity) => {
         if(!isInCart(item.id)) {
             setCart(prev => [...prev, {...item, quantity}])
+            console.log(`El producto ${item.name} fue agregado con exito`)
         } else {
             console.error('El producto ya fue agregado')
         }
@@ -34,14 +35,16 @@ export const CartProvider = ({ children }) => {
         setCart([])
     }
     
-    //Funcion para 
+    //Funcion para indicar que hay en el carrito
     const isInCart = (itemId) => {
         return cart.some(prod => prod.id === itemId)
     }
+
+   
     
     //Retornamos toda las funciones como props mediante value
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total}}>
             { children }
         </CartContext.Provider>
     )

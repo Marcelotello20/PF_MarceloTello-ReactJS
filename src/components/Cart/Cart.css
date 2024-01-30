@@ -1,9 +1,49 @@
 .cartPage {
     display: flex;
     width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
 }
-
 .cartPage h1,h2,h3,h4,h5,h6{
     color: white;
 
+}
+
+.Cart {
+    display: flex;
+    width: 80%;
+    flex-flow: column ;
+}
+
+.CarroInfo2 {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.CarroCheckout {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.CarroCheckout a {
+    text-decoration: none;
+    color: black;
+    background-color: rgb(226, 202, 43);
+    
+    width: 100%;
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    transition: background-color 1s, color 1s;
+}
+
+.CarroCheckout a:hover {
+    background-color: rgb(99, 24, 169);
+    color: rgb(226, 202, 43);;
 }
