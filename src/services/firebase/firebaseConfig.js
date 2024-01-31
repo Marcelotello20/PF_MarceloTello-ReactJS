@@ -9,7 +9,7 @@ const firebaseConfig = {
   storageBucket: "pf-marcelotello.appspot.com",
   messagingSenderId: "125238277816",
   appId: "1:125238277816:web:46c8fd3ad41adeddd9e64d"
-};
+}
 
 
 const app = initializeApp(firebaseConfig);

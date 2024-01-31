@@ -35,7 +35,11 @@ const ItemDetailContainer = () => {
            })
 
     }, [itemId])
-    
+
+    if(loading) {
+        return <h1 className='Loadings'>Cargando productos...</h1>
+    }
+
     return (
         <div className='ItemDetailContainer'>
             <ItemDetail {...product} />

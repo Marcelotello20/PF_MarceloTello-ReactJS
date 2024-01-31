@@ -1,6 +1,15 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto esta trabajado con React + Vite , esta dirigido a crear una app con productos para su compra junto con un carrito que almacena los objetos elegidos en productos y enviarlos al carro con funciones para quitar el producto elegido, limpiar el carrito o pasar al checkout ya sabiendo el total de la compra.Despues Ingresaran a un checkout donde este les preguntara su nombre , su numero de telefono y su correo para crearles la orden y nosotros tomar su pedido y enviarlo a nuestra base de datos.
+
+# Importante - Datos en Firebase
+Tanto los productos como los datos de la orden generada estan creados en Firebase para la obtención de estos integrado en el codigo de jsx
+
+# Importante - CartContex(CartPage y CheckoutPage)
+
+En el código de la CartPage y Checkout saldra un "total()" y un "totalQuantity()" esto lo tuve que llamar de esta forma para poder transformar lo que me daba la función en un numero que aceptara Firebase y FireStorage dado a como cree la función total y totalQuantity en CartContext
+
+
 
 Currently, two official plugins are available:
 

@@ -40,11 +40,17 @@ export const CartProvider = ({ children }) => {
         return cart.some(prod => prod.id === itemId)
     }
 
-   
-    
+    //Función que calcula la cantidad total de productos en el carrito y transformandolo a number
+    const totalQuantityFunc = () => cart.reduce((total, item) => total + item.quantity, 0);
+    const totalQuantity = totalQuantityFunc();
+
+    //Función que calcula el total del precio de todos los productos en el carrito y transformandolo a number
+    const totalFunc = () => cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+    const total = totalFunc();
+
     //Retornamos toda las funciones como props mediante value
     return (
-        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart}}>
+        <CartContext.Provider value={{ cart, addItem, removeItem, clearCart, totalQuantity, total}}>
             { children }
         </CartContext.Provider>
     )

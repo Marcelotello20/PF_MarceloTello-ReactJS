@@ -10,11 +10,11 @@ const Cart = () => {
     const { cart, clearCart, totalQuantity, total} = useContext(CartContext)
     
     //Si no hay productos te saldra este mensaje
-    if (totalQuantity == 0) {
+    if (totalQuantity() == 0) {
         return (
             <div className='cartPage'>
                 <h1>No hay items en el carrito</h1>
-                <Link to='/' className='Option'>Productos</Link>
+                <Link to='/' className='Option ButtonProducts'>Productos</Link>
             </div>
         )
     }
