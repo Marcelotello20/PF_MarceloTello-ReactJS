@@ -25,7 +25,7 @@ const Checkout = () => {
                     name, phone, email
                 },
                 items: cart,
-                total: total,
+                total: total(),
                 date: Timestamp.fromDate(new Date())
             }
             console.log('Valor de total:', objOrder.total);
@@ -35,8 +35,9 @@ const Checkout = () => {
             const outOfStock = []
 
             const ids = cart.map(prod => prod.id)
-
-            const productsRef = collection(db, 'products')
+            
+            //items es el nombre de la coleccion en firestore
+            const productsRef = collection(db, 'items')
 
             const productsAddedFromFirestore = await getDocs(query(productsRef, where(documentId(),'in', ids )))
 
@@ -44,14 +45,21 @@ const Checkout = () => {
             
             //Logica para obtener los datos de docs
             docs.forEach(doc => {
-                const dataDoc= doc.data()
-                const stockDb= dataDoc.stockDb
                 
-                //Buscando en el carrito si hay productos
-                const productAddedToCart = cart.find(prod => prod.id === doc.id)
-                
-                //Si hay productos obtenemos la cantidad agregada
-                const prodQuantity = productAddedToCart?.quantity
+                console.log('Doc:', doc);
+    
+                const dataDoc = doc.data();
+                console.log('Data del doc:', dataDoc);
+    
+                const stockDb = dataDoc.stock;
+                console.log('Cantidad en stock:', stockDb);
+    
+                const productAddedToCart = cart.find(prod => prod.id === doc.id);
+                console.log('Producto agregado al carrito:', productAddedToCart);
+    
+                const prodQuantity = productAddedToCart?.quantity;
+                console.log('Cantidad en carrito:', prodQuantity);
+
                 
                 //Si el stock es menor o igual a la cantidad del carrito se agrega a outOfStock
                 if(stockDb >= prodQuantity) {

@@ -5,9 +5,11 @@ Este proyecto esta trabajado con React + Vite , esta dirigido a crear una app co
 # Importante - Datos en Firebase
 Tanto los productos como los datos de la orden generada estan creados en Firebase para la obtención de estos integrado en el codigo de jsx
 
-# Importante - CartContex(CartPage y CheckoutPage(total y totalQuantity))
+# Importante - CartContex(CartPage y CheckoutPage(total() y totalQuantity())
 
-En el código de la CartPage y Checkout saldra un "totalFunc()" y un "totalQuantityFunc()" esto lo tuve que llamar de esta forma para poder transformar lo que me daba la función despues con total y totalQuantity en un numero que aceptara Firebase y FireStorage dado a como cree la función total y totalQuantity en CartContext
+En el código de Cart y Checkout saldra un "total()" y un "totalQuantity()" esto lo tuve que llamar de esta forma para poder transformar lo que era la funcion a un valor number que aceptara Firebase y FireStorage dado a como cree la función total y totalQuantity en CartContext.
+
+
 
 
 
