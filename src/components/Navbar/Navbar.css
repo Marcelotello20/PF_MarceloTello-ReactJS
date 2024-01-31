@@ -1,7 +1,9 @@
 
 .Navbar{
-    display:flex;
+    display:grid;
     width: 100%;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 6fr 4fr;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,33 +19,45 @@
   padding: 20px;
 }
 
+
+
 .logoNavBar {
   width: 80px;
   padding: 20px;
   border-radius: 30px;
   margin: 10px;
+  align-self: center;
 }
-.Navbar h3 {
-  padding: 20px;
-  border-radius: 30px;
-  margin: 10px;
-  color: white;
-  font-size: 20px;
+.LogoLink {
+  display: flex;
+  justify-self: center;
+  align-self: center;
 }
+
+
+
 .Categories {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     list-style: none;
+    height: 50px;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    z-index: 1;
 }
   
   .Categories a {
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
-    margin: 10px;
+    height: 20px;
+    margin: 0px;
     color: white;
     font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
 
     text-decoration: none;
     color: white;
@@ -62,7 +76,7 @@
   }
 
 
-
+/* Manejando los links de navbar de manera dinamica*/
 .Option {
     display: flex;
     justify-content: center;
@@ -78,7 +92,6 @@
   }
 
   .ActiveOption:active {
-    
     background-color: #550062;
     color: rgb(255, 187, 0);
   }

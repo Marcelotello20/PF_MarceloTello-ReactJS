@@ -10,10 +10,10 @@ const CartWidget = () => {
     const { totalQuantity } = useContext(CartContext)
 
     return (
-        <Link to='/cart' className='CartWidget' >
+        <Link to='/cart' className='CartWidget' style={{ display: totalQuantity() > 0 ? 'grid' : 'none'}} >
           <div className='CarritoContainer'>
           <img className='Carrito' src={car} alt="cart-widget"/>
-          <p className='CarritoQuantity'>{totalQuantity}</p>
+          <p className='CarritoQuantity'>{totalQuantity()}</p>
 
           </div>
         </Link>

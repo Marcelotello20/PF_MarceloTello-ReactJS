@@ -7,7 +7,7 @@ const Navbar = () => {
 
     return (
     <nav className="Navbar">
-      <Link to='/'>
+      <Link to='/' className="LogoLink">
         <img src="../../public/images/GLM.png" alt="logo ghetto life" className="logoNavBar" />
       </Link> 
       <ul className="Categories">
