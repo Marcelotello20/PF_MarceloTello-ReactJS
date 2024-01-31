@@ -9,7 +9,10 @@ Tanto los productos como los datos de la orden generada estan creados en Firebas
 
 En el código de Cart y Checkout saldra un "total()" y un "totalQuantity()" esto lo tuve que llamar de esta forma para poder transformar lo que era la funcion a un valor number que aceptara Firebase y FireStorage dado a como cree la función total y totalQuantity en CartContext.
 
-#
+# HEADERS PAGES
+
+Los Headers y sus cambios estan configurados en base a los Navlinks de Navbar.jsx, funcionan estos con la obtencion recoletada de categoryId en Firestore de la collection(db,'items') y asi vamos dandole la navegacion y el cambio de estilos del header. 
+En Header podemos ver un operador ternario para definir className que es ocupado en el return para que la clase del Header sea en base a la obtencion de titulo como props de Header , este prop lo recibimos en ItemListContainer de el estado header,setHeadertitle usado en conjunto con el useEffect de ItemListContainer que es de donde recibimos los datos de FireStore. 
 
 
 

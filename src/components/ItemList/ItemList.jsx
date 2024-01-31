@@ -3,8 +3,8 @@ import Item from '../Item/Item'
 
 
 const ItemList = ({products}) => {
-    //Comprobación de que tipo de información esta pasando
-    console.log('Type of products:', typeof products);
+    // //Comprobación de que tipo de información esta pasando
+    // console.log('Type of products:', typeof products);
 
     return(
         <div className='ListGroup'>

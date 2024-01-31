@@ -14,7 +14,7 @@ const ItemListContainer = () => {
   const [products, setProducts] = useState([])
   const [loading,setLoading] = useState(true)
 
-  //Estado del Header
+  //Estado del Header para usarlo con categoryId
   const [headerTitle, setHeaderTitle] = useState("Bienvenido");
 
   const { categoryId } = useParams()
@@ -27,7 +27,7 @@ const ItemListContainer = () => {
         ? query(collection(db, 'items'), where ('categoryId', '==', categoryId))
         : collection(db, 'items');
 
-      //Actualizar estado del Header
+      //HEADER CONFIGURADO CON EL CATEGORYID
       setHeaderTitle(categoryId ? categoryId : "Bienvenido");
       
       //Al recibir respuesta firestore debemos adaptar la respuesta para utilizarla en nuestra app
