@@ -4,7 +4,7 @@ import { CartContext } from "../../context/CartContext";
 import './CartItem.css'
 
 
-const CartItem = ({id, name, price, quantity}) => {
+const CartItem = ({id, name, price, quantity, img}) => {
 
     const { removeItem } = useContext(CartContext)
 
@@ -15,12 +15,11 @@ const CartItem = ({id, name, price, quantity}) => {
     return (
         <div className="CarritoItems">
             <div className='CarritoItem'>
-
                 <p className='CarritoInfo'>{name}</p>
                 <p className='CarritoInfo'>Cantidad: {quantity}</p>
                 <p className='CarritoInfo'>Precio: ${price}</p>
                 
-                <button onClick={buttonRemoveItem} className="buttonRemove">X</button>
+                <button onClick={buttonRemoveItem} className="ButtonRemove">X</button>
                 
             </div>
         </div>

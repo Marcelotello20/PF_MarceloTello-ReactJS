@@ -18,10 +18,10 @@
     justify-content: center;
     justify-self: center;
     align-self: center;
-
-    overflow: hidden;
-    background-image: linear-gradient(blueviolet,black);
-    color: white;
+    transition: color 1s;
+}
+.CarritoContainer a:hover {
+    color: blueviolet;
 }
 
 .Carrito {
@@ -30,13 +30,15 @@
 
 .CarritoQuantity {
     font-size: 15px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
     text-align: center;
     width: 25px;
-    margin: 0;
+    margin: 0 0 0 5px;
     display:flex;
-    color: rgb(255, 187, 0);
-
-
+    color: rgb(255, 255, 255);
+    
 }
+
+
 

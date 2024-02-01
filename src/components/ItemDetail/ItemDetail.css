@@ -1,6 +1,7 @@
 /*BOTON TERMINAR COMPRA*/
-.FinishCarButton button {
+.ItemFooter .Option {
     border-radius: 20px;
+    text-decoration: none;
     background-color: rgb(226, 202, 43);
     border: 0;
     font-size: 15px;
@@ -8,7 +9,7 @@
     padding: 20px;
     transition: background-color 1s, color 1s;
 }
-.FinishCarButton button:hover {
+.ItemFooter .Option:hover {
     color: white;
     background-color: rgb(153, 43, 226);
 }

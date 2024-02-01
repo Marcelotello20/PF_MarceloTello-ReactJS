@@ -11,6 +11,7 @@
     align-items: center;
 }
 .CarritoInfo {
+    font-family: 'Open Sans', sans-serif;
     width: 33%;
     color: white;
     margin: 0px 0px 0px 20px
@@ -22,3 +23,19 @@
     justify-content: space-around;
 }
 
+.ButtonRemove {
+    font-family: 'Arvo', sans-serif;
+    font-weight: bolder;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border: 0;
+    font-size: 15px;
+    margin: 10px;
+    padding: 20px;
+    transition: background-color 1s, color 1s;
+}
+.ButtonRemove:hover {
+    color: white;
+    background-color: rgb(153, 43, 226);
+}

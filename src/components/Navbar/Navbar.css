@@ -79,7 +79,7 @@
   }
 
 .Categories a:hover {
-    color: rgb(255, 187, 0);
+    color: rgb(129, 106, 41);
 }
   
 @media(max-width:1000px) {
@@ -96,7 +96,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: background-color 1s, color 1s;
+    animation:  color 1s;
 }
 
 .ActiveOption {
@@ -106,9 +106,8 @@
   
 }
 
-.ActiveOption:active {
-    background-color: #550062;
-    color: rgb(255, 187, 0);
+.Categories a:active {
+    color: rgb(134, 134, 134);
 }
 
   

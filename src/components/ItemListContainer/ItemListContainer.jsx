@@ -30,6 +30,7 @@ const ItemListContainer = () => {
       //HEADER CONFIGURADO CON EL CATEGORYID
       setHeaderTitle(categoryId ? categoryId : "Bienvenido");
       
+      
       //Al recibir respuesta firestore debemos adaptar la respuesta para utilizarla en nuestra app
       getDocs(collectionRef)
         .then(response => {
@@ -47,6 +48,8 @@ const ItemListContainer = () => {
           setLoading(false)
         })
   }, [categoryId])
+  
+  
 
   return (
     <>

@@ -44,12 +44,15 @@
 }
 
 /*BOTON ADD*/
+.AddButton {
+    justify-self: center;
+}
 .AddButton button {
     border-radius: 20px;
     background-color: rgb(226, 202, 43);
     border: 0;
     font-size: 15px;
-    margin: 10px;
+    margin: 30px;
     padding: 20px;
     transition: background-color 1s, color 1s;
 }

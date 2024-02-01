@@ -47,9 +47,24 @@
     font-family: 'Open Sans',sans-serif;
 }
 
-
-.CardItem .ItemFooter .Option {
-   font-family: 'Open Sans', sans-serif;
-   font-weight: bold;
-   font-size: 15px;
+/*BOTON VER DETALLE*/
+.ButtonDetalle {
+    justify-self: center;
+}
+.ButtonDetalle a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    font-weight: bolder;
+    border-radius: 20px;
+    color: black;
+    background-color: rgb(226, 202, 43);
+    border: 0;
+    font-size: 15px;
+    margin: 30px;
+    padding: 20px;
+    transition: background-color 1s, color 1s;
+}
+.ButtonDetalle a:hover {
+    color: white;
+    background-color: rgb(153, 43, 226);
 }
