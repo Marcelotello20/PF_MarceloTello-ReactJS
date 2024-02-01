@@ -53,6 +53,7 @@ const ItemListContainer = () => {
         
       <Header titulo={headerTitle}/>
       <div className="Productos">
+        <h2>Productos</h2>
         <ItemList products={products} />
       </div>
     </>

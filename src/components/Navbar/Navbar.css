@@ -1,4 +1,4 @@
-
+/*CONTENEDOR NAVBAR */
 .Navbar{
     display:grid;
     width: 100%;
@@ -10,6 +10,18 @@
     background-color: black;
     margin: 0;   
 }
+@media(max-width:768px) {
+  .Navbar {
+    height: 150px;
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+@media(max-width:400px) {
+  .Navbar {
+    height: 200px;
+  }  
+}
+
 .Navbar div {
   display: flex;
   flex-direction: row;
@@ -20,12 +32,10 @@
 }
 
 
-
+/*LOGO*/
 .logoNavBar {
   width: 80px;
-  padding: 20px;
   border-radius: 30px;
-  margin: 10px;
   align-self: center;
 }
 .LogoLink {
@@ -35,7 +45,7 @@
 }
 
 
-
+/*CATEGORIA PRODUCTOS¨*/
 .Categories {
     display: flex;
     flex-direction: row;
@@ -46,34 +56,39 @@
     padding: 0;
     justify-self: center;
     align-self: center;
-    z-index: 1;
+    height: 100%;
+    margin: 0;
+    
 }
   
-  .Categories a {
+.Categories a {
     padding: 10px;
     border-radius: 30px;
     height: 20px;
     margin: 0px;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+    align-self: center;
+    text-align: left;
 
     text-decoration: none;
     color: white;
     transition: color 1s;
   }
 
-  .Categories a:hover {
+.Categories a:hover {
     color: rgb(255, 187, 0);
-  }
+}
   
- 
-  @media(max-width:1000px) {
+@media(max-width:1000px) {
     .Categories {
       padding: 0;
     }  
-  }
+}
+
+  
 
 
 /* Manejando los links de navbar de manera dinamica*/
@@ -89,12 +104,12 @@
     justify-content: center;
     align-items: center;
   
-  }
+}
 
-  .ActiveOption:active {
+.ActiveOption:active {
     background-color: #550062;
     color: rgb(255, 187, 0);
-  }
+}
 
   
 

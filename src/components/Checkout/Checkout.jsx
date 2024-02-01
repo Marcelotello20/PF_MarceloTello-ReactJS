@@ -1,5 +1,6 @@
 import { useContext, useState } from "react"
 import { CartContext } from "../../context/CartContext"
+import './Checkout.css'
 
 import { collection, documentId, writeBatch } from "firebase/firestore"
 import { db } from "../../services/firebase/firebaseConfig"
@@ -96,7 +97,9 @@ const Checkout = () => {
     }
 
     if(orderId) {
-        return <h1 className='OrderId'>El id de su orden es: {orderId} </h1>
+        return (
+            <h1 className='OrderId'>El id de su orden es: {orderId} </h1>
+        )
     }
 
     return (

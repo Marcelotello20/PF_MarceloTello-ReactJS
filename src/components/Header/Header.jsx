@@ -18,7 +18,7 @@ const Header = ( {titulo} ) => {
         titulo === "Beats" ? "Instrumentales con emoción" :
         titulo === "Grabación" ? "Capturando tu voz" :
         titulo === "Sonido" ? "Mixing y Master" :
-        ""; //DEFAULT
+        "Estudio de produccion musical enfocado al area de la Blackmusic. Con experiencia en produccion de variados ritmos como Afrobeats - Dancehall - Hiphop - Reggaeton - Trap , entre otros. Nuestro enfoque es el de transmitir emociones con nuestras producciones, siempre comentamos lo importante que es que trabajemos en conjunto para poder llegar a trabajar producciones ¡Full Calidad!."; //DEFAULT
 
     //Devuelve Nuestro Header dependiendo de el useState(ItemListContainer headerTitle)   
     return (
