@@ -15,6 +15,12 @@ Los Headers y sus cambios estan configurados en base a los Navlinks de Navbar.js
 En Header podemos ver un operador ternario para definir className que es ocupado en el return para que la clase del Header sea en base a la obtencion de titulo como props de Header , este prop lo recibimos en ItemListContainer de el estado header,setHeadertitle usado en conjunto con el useEffect de ItemListContainer que es de donde recibimos los datos de FireStore. 
 
 
+# CART Y LOCALSTORAGE
+
+En el CartContext existe un sistema de verificación del cart [] con su useState , primero comprueba si existe en el localStorage para luego con un ternario darle la lógica de que si existe savedCart que lo transforme en un Objeto JS ya que en localStorage se tiene que guardar como cadenas de texto.
+Luego con un UseEffect guardamos el cart (carrito) en el localStorage cada vez que este cambie con JSON.stringify que es para transformarlo a cadena de texto junto con la clave cart.
+
+
 
 
 

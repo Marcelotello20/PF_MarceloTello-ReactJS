@@ -1,4 +1,5 @@
 import { createContext, useState } from "react";
+import { useEffect } from "react";
 
 // 1Creamos un contexto con el CartContext
 export const CartContext = createContext({
@@ -9,11 +10,22 @@ export const CartContext = createContext({
 //osea es una caja de herramientas tipo carrito
 export const CartProvider = ({ children }) => {
     
-    //Crear estado para almacenar los datos del carrito
-    const [cart, setCart] = useState ([])
+    //Estado para almacenar los datos del carrito combinando LocalStorage
+    const [cart, setCart] = useState(() => {
+        // SavedCart es nuestra referencia de cart en el local storage
+        const savedCart = localStorage.getItem('cart');
+        // Busca si savedCart existe en el localStorage y lo transforma denuevo a JS , si no devuelve un array vacio
+        return savedCart ? JSON.parse(savedCart) : [];
+    });
 
     //Comprobación
     console.log(cart)
+
+    //Guardar el carrito en el LocalStorage siempre que cambie cart con una funcion 
+    useEffect(() => {
+        //Guardando con la clave cart en linea de texto
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }, [cart]);
 
     const addItem = (item, quantity) => {
         if(!isInCart(item.id)) {
