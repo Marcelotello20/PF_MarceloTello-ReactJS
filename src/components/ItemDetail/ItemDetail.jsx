@@ -52,7 +52,7 @@ const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
                 {   
                     //Si no hay stock del producto saldra el mensaje No hay Stock
                     stock === 0
-                    ? <Link to='/cart' className='OutOfStockButton'>No hay Stock</Link>
+                    ? <Link to='/' className='OutOfStockButton'>No hay Stock</Link>
                     : (quantityAdded > 0
                       ? <Link to='/cart' className='Option'>Terminar compra</Link>
                       : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
