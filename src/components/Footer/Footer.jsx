@@ -7,11 +7,11 @@ const Footer = () => {
 
         <footer className='Footer'>
             <h5 className="FooterTitle">Redes Sociales y Links</h5>
-            <div class="FooterLinks">
+            <div className="FooterLinks">
                 <Link to='/' className="Links">Inicio</Link>
-                <a class="Links" href="https://www.instagram.com/ghettolifemuzik/">Instagram</a>
-                <a class="Links" href="https://wa.me/56954762733">Whatsapp</a>
-                <a class="Links" href="https://www.youtube.com/@GhettoLifeMuzik">Youtube</a>
+                <a className="Links" href="https://www.instagram.com/ghettolifemuzik/">Instagram</a>
+                <a className="Links" href="https://wa.me/56954762733">Whatsapp</a>
+                <a className="Links" href="https://www.youtube.com/@GhettoLifeMuzik">Youtube</a>
             </div>
         </footer>
     )
