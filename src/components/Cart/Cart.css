@@ -3,7 +3,9 @@
     width: 100%;
     flex-flow: row wrap;
     justify-content: center;
+    height: 800px;
 }
+
 /*TITULOS CART*/
 .CartTitle {
     color: white;
@@ -46,6 +48,9 @@
 .CarroInfo2 button:hover {
     color: white;
     background-color: rgb(153, 43, 226);
+}
+@media(max-width:650px) {
+    
 }
 
 /*BOTON CHECKOUT*/
@@ -103,4 +108,20 @@
 .NoItemsCartPage a:hover {
     color: white;
     background-color: rgb(153, 43, 226);
+}
+
+/*MEDIA PARA MANEJAR EL RESPONSIVE EN NO HAY ITEMS CARRITO y DEL CONTENEDOR CART PAGE*/
+@media(max-width:500px) {
+    .cartPage {
+        width: 80%;
+        height: 500px;
+    }
+    .CartTitle {
+        font-size: 20px;
+        margin: 0;
+        text-align: center;
+    }
+    .NoItemsCartPage a {
+        width: 60%;
+    }
 }

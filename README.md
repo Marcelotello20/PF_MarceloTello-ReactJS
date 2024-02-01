@@ -20,7 +20,9 @@ En Header podemos ver un operador ternario para definir className que es ocupado
 En el CartContext existe un sistema de verificación del cart [] con su useState , primero comprueba si existe en el localStorage para luego con un ternario darle la lógica de que si existe savedCart que lo transforme en un Objeto JS ya que en localStorage se tiene que guardar como cadenas de texto.
 Luego con un UseEffect guardamos el cart (carrito) en el localStorage cada vez que este cambie con JSON.stringify que es para transformarlo a cadena de texto junto con la clave cart.
 
+# BUTTONS 
 
+Los estilos visuales de los bottones se encuentran dentro del css en la misma carpeta del componente. Los quise trabajar asi para poder darle mejor lectura a todo el trabajo y personalizarlo de la mejor manera.
 
 
 

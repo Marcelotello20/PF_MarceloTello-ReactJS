@@ -1,3 +1,5 @@
+/*CSS DEL LISTADO DE PRODUCTOS EN CART (CART PAGE)*/
+
 .CarritoItems {
     display: flex;
     width: 100%;
@@ -23,8 +25,9 @@
     justify-content: space-around;
 }
 
+/*BUTTON REMOVE ITEM DEL CART*/
 .ButtonRemove {
-    font-family: 'Arvo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: bolder;
     border-radius: 30px;
     color: white;
@@ -32,10 +35,22 @@
     border: 0;
     font-size: 15px;
     margin: 10px;
-    padding: 20px;
+    padding: 10px;
     transition: background-color 1s, color 1s;
 }
 .ButtonRemove:hover {
     color: white;
     background-color: rgb(153, 43, 226);
+}
+
+@media (max-width:650px){
+    .ButtonRemove {
+        padding: 10px;
+        font-size: 10px;
+        font-weight: lighter;
+    }
+
+    .CarritoInfo {
+        font-size: 13px;
+    }
 }

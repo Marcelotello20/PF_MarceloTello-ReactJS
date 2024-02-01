@@ -6,7 +6,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CartContext } from '../../context/CartContext'
 
-const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
+const ItemDetail = ({ id, name, img, categoryId, description, price, stock}) => {
     //Crear estado donde se va almacenar la cantidad deseada del producto
     const [quantityAdded, setQuantityAdded] = useState(0)
     
@@ -27,7 +27,9 @@ const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
     }
     
     return (
+
         <article className="CardItem">
+
             <header className="Header">
                 <h3 className="ItemHeader">
                     {name}
@@ -48,17 +50,19 @@ const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
                 </p>
 
             </section>
+
             <footer className="ItemFooter">
                 {   
                     //Si no hay stock del producto saldra el mensaje No hay Stock
                     stock === 0
                     ? <Link to='/' className='OutOfStockButton'>No hay Stock</Link>
-                    : (quantityAdded > 0
+                    : ( quantityAdded > 0
                       ? <Link to='/cart' className='Option'>Terminar compra</Link>
                       : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                       )
                 }
             </footer>
+            
         </article>
     )
 }
