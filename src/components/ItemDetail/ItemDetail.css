@@ -1,12 +1,31 @@
+/*ITEM FOOTERITEM*/
+.CardItem footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+}
+
 /*BOTON TERMINAR COMPRA*/
 .ItemFooter .Option {
-    border-radius: 20px;
+    font-family: 'Arvo', sans-serif;
+    font-weight: bolder;
     text-decoration: none;
-    background-color: rgb(226, 202, 43);
-    border: 0;
     font-size: 15px;
-    margin: 10px;
-    padding: 20px;
+    
+    
+    display: flex;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
     transition: background-color 1s, color 1s;
 }
 .ItemFooter .Option:hover {
@@ -14,3 +33,30 @@
     background-color: rgb(153, 43, 226);
 }
 
+/*BOTON OUTOFSTOCK*/
+
+.OutOfStockButton {
+    font-family: 'Arvo', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    font-size: 15px;
+    
+    
+    display: flex;
+    border-radius: 30px;
+    color: white;
+    background-color: rgb(44, 44, 44);
+    border: 0;
+    align-items: center;
+    justify-content: center;
+    
+    width: 150px;
+    margin: 20px;
+    padding: 10px;
+    transition: background-color 1s, color 1s;
+}
+
+.OutOfStockButton:hover {
+    color: rgb(73, 73, 73);
+    background-color: rgb(34, 34, 34);
+}

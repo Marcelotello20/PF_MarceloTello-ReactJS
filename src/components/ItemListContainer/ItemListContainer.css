@@ -28,16 +28,6 @@
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
-.Productos .ItemFooter {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 20px;
-    background-color: rgb(226, 202, 43);
-    border: 0;
-    margin: 10px;
-    transition: background-color 1s, color 1s;
-}
 .Productos .ItemFooter:hover {
     color: white;
     background-color: rgb(153, 43, 226);

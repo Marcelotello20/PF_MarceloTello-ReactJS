@@ -13,7 +13,7 @@ const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
     // Usando addItem del contexto Cart Context
     const { addItem } = useContext(CartContext)
     
-    //Funcion para agregar la cantidad con el botton terminar compra
+    //Funcion para agregar la cantidad con el botton AddButton
     const handleOnAdd = (quantity) => {
         setQuantityAdded(quantity)
         
@@ -49,14 +49,15 @@ const ItemDetail = ({ id, name, img, categoryId, description, price,stock}) => {
 
             </section>
             <footer className="ItemFooter">
-                {
-                    quantityAdded > 0 ? (
-                        <Link to='/cart' className='Option'>Terminar compra</Link>
-                    ) : (
-                        <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
-                    )
+                {   
+                    //Si no hay stock del producto saldra el mensaje No hay Stock
+                    stock === 0
+                    ? <Link to='/cart' className='OutOfStockButton'>No hay Stock</Link>
+                    : (quantityAdded > 0
+                      ? <Link to='/cart' className='Option'>Terminar compra</Link>
+                      : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
+                      )
                 }
-                
             </footer>
         </article>
     )
