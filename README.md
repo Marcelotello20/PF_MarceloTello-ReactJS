@@ -1,4 +1,7 @@
 # React + Vite
+Inicializacion con el codigo 
+## 'npm run dev'
+
 
 Este proyecto esta trabajado con React + Vite , esta dirigido a crear una app con productos para su compra junto con un carrito que almacena los objetos elegidos en productos y enviarlos al carro con funciones para quitar el producto elegido, limpiar el carrito o pasar al checkout ya sabiendo el total de la compra.Despues Ingresaran a un checkout donde este les preguntara su nombre , su numero de telefono y su correo para crearles la orden y nosotros tomar su pedido y enviarlo a nuestra base de datos.
 
@@ -24,7 +27,7 @@ Luego con un UseEffect guardamos el cart (carrito) en el localStorage cada vez q
 
 Los estilos visuales de los bottones se encuentran dentro del css en la misma carpeta del componente. Los quise trabajar asi para poder darle mejor lectura a todo el trabajo y personalizarlo de la mejor manera.
 
-#
+
 
 
 
@@ -32,4 +35,4 @@ Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# PE2_MarceloTello-ReactJS
+# PF_MarceloTello-ReactJS
