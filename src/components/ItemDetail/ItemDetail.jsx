@@ -27,7 +27,7 @@ const ItemDetail = ({ id, name, img, categoryId, description, price, stock}) => 
     }
     
     return (
-
+                
         <article className="CardItem">
 
             <header className="Header">
@@ -52,6 +52,7 @@ const ItemDetail = ({ id, name, img, categoryId, description, price, stock}) => 
             </section>
 
             <footer className="ItemFooter">
+
                 {   
                     //Si no hay stock del producto saldra el mensaje No hay Stock
                     stock === 0
@@ -61,6 +62,7 @@ const ItemDetail = ({ id, name, img, categoryId, description, price, stock}) => 
                       : <ItemCount initial={1} stock={stock} onAdd={handleOnAdd} />
                       )
                 }
+                
             </footer>
             
         </article>

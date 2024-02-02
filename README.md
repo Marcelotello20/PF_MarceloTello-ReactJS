@@ -24,6 +24,8 @@ Luego con un UseEffect guardamos el cart (carrito) en el localStorage cada vez q
 
 Los estilos visuales de los bottones se encuentran dentro del css en la misma carpeta del componente. Los quise trabajar asi para poder darle mejor lectura a todo el trabajo y personalizarlo de la mejor manera.
 
+#
+
 
 
 Currently, two official plugins are available:

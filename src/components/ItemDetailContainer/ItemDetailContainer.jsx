@@ -36,11 +36,16 @@ const ItemDetailContainer = () => {
 
     }, [itemId])
 
+    
     if(loading) {
         return <h1 className='Loadings'>Cargando...</h1>
     }
-
+    
+    //Const para crear un display que controle el estilo de CardItem si no existe un id coincidente en nuestro docRef(db,"items",id)
+    const displayProduct = !product ? 'flex' : 'none' ;
+    
     return (
+
         <div className='ItemDetailContainer'>
             <ItemDetail {...product} />
         </div>
